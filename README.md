@@ -4,27 +4,30 @@
 
 The printf is a family of functions in the C programming language are a set of functions that take a format string as input among a variable sized list of other values and produce as output a string that corresponds to the format specifier and given input values.
 
-## Installation
+## Compilation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+All files must be compiled with [gcc](https://en.wikipedia.org/wiki/GNU_Compiler_Collection),using the options -Wall -Werror -Wextra -pedantic -std=gnu89.
 
 ```bash
-pip install foobar
+gcc -Wall -Werror -Wextra - pedantic -std=gnu89 *.c
 ```
 
 ## Usage
 
-```python
-import foobar
+```c
+#include <stdio.h>
+#include "main.h"
 
-# returns 'words'
-foobar.pluralize('word')
+#int main(void)
+{
+	int n;
 
-# returns 'geese'
-foobar.pluralize('goose')
+	n = 10;
 
-# returns 'phenomenon'
-foobar.singularize('phenomena')
+	_printf("%d", n);
+
+	return (0);
+}
 ```
 
 ## Contributing
