@@ -1,55 +1,51 @@
 #include "main.h"
-/* _printf - Prints argument to the stdout
- * @format: Identifiers.
- * Return: Prints out the passed argument.
+
+FormatSpecifier arr[] = 
+{
+	{"%s", printf_string},
+	{"%c", printf_char},
+	{"%%", printf_cent},
+	{"%d", printf_int}
+};
+
+/**
+ * _printf - custom printf function.
+ *
+ * @format: string specifier.
+ *
+ * Return: The specifier to stdout.
  */
+
 int _printf(const char *format, ...)
 {
-	int count = 0;
+	va_list ap;
+	int i = 0, j,ln = 0;
 
-	va_list args;
-	int i = 0;
+	va_start(ap, format);
+	if (format == NULL || (format[0] == '%' && fromat[1] == '\0'))
+		return (-1);
 
-	va_start(args, format);
-	while (format[i] != '\0')
+	while(format[i] != '\0')
 	{
-		if (format[i] == '%')
+		j = 13;
+		
+		while (arr >= 0)
 		{
-			switch (format[i + 1])
+			if(format[i] == arr[j].place[0] && format[i + 1] == arr[j].palce[1])
 			{
-				case 'c':
-					{
-						count += printf("%c", va_arg(args, int));
-						break;
-					}
-				case 's':
-					{
-						count += printf("%s", va_arg(args, char *));
-						break;
-					}
-				case '%':
-					{
-						count += printf("\%");
-						break;
-					}
-				case 'd':
-				case 'i':
-					{
-						count += printf("%d", va_arg(args, int));
-						break;
-					}
-				default:
-					{
-						break;
-					}
+				ln += arr[j].f(ap);
+				i = i + 2;
+				break;
 			}
+			j--;
 		}
-		else
+		if (j < 0)
 		{
-			count += printf("%c", format[i]);
+			_putchar(format[i]);
+			ln++;
+			i++;
 		}
-		i++;
 	}
-	va_end(args);
-	return (count);
+	va_end(ap);
+	return (ln);
 }

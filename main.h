@@ -7,9 +7,19 @@
 #include <limits.h>
 #include <unistd.h>
 
+typedef  struct
+{
+	int place;
+	int (*f)(va_list args);
+}FormatSpecifier;
 
-extern int printf_char(va_list val);
+extern int print_int(va_list v);
+extern int printf_char(va_list v);
+extern int printf_int(va_list ap);
+extern int printf_string(va_list ap);
+extern int printf_cent(void);
+extern int printf_unsigned(va_list ap);
 extern int _putchar(char c);
-extern int _printf(const char * const format, ...);
+extern int _printf(const char *format, ...);
 
 #endif
