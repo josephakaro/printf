@@ -29,7 +29,7 @@ int _printf(const char *format, ...)
 					}
 				case '%':
 					{
-						count += printf("\%");
+						count += printf("%%");
 						break;
 					}
 				case 'd':
