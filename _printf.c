@@ -1,6 +1,5 @@
 #include "main.h"
-/**
- * _printf - Prints argument to the stdout
+/* _printf - Prints argument to the stdout
  * @format: Identifiers.
  * Return: Prints out the passed argument.
  */
