@@ -31,7 +31,7 @@ int _printf(const char *format, ...)
 		
 		while (arr >= 0)
 		{
-			if(format[i] == arr[j].place[0] && format[i + 1] == arr[j].palce[1])
+			if(format[i] == arr[j].place[0] && format[i + 1] == arr[j].place[1])
 			{
 				ln += arr[j].f(ap);
 				i = i + 2;
