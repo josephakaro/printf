@@ -27,7 +27,7 @@ int printf_int(va_list ap)
 		_putchar(digit + '0');
 		count++;
 		n = n / 10;
-	} while (n > 0)
+	} while (n > 0);
 	{
 		_putchar('-');
 		count++;

@@ -9,8 +9,8 @@
 
 typedef  struct
 {
-	int place;
-	int (*f)(va_list args);
+	char *place;
+	int (*f)(va_list ap);
 }FormatSpecifier;
 
 extern int print_int(va_list v);
