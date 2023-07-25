@@ -22,14 +22,14 @@ int _printf(const char *format, ...)
 	int i = 0, j,ln = 0;
 
 	va_start(ap, format);
-	if (format == NULL || (format[0] == '%' && fromat[1] == '\0'))
+	if (format == NULL || (format[0] == '%' && format[1] == '\0'))
 		return (-1);
 
 	while(format[i] != '\0')
 	{
 		j = 13;
 		
-		while (arr >= 0)
+		while (arr > 0)
 		{
 			if(format[i] == arr[j].place[0] && format[i + 1] == arr[j].place[1])
 			{
