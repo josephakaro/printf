@@ -29,7 +29,7 @@ int _printf(const char *format, ...)
 	{
 		j = 13;
 		
-		while (arr > 0)
+		while (j >= 0)
 		{
 			if(format[i] == arr[j].place[0] && format[i + 1] == arr[j].place[1])
 			{

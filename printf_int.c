@@ -12,12 +12,10 @@ int printf_int(va_list ap)
 {
 	int n = va_arg(ap, int);
 	int count  = 0;
-	int sign = 1;
 	int digit;
 
 	if (n < 0)
 	{
-		sign = -1;
 		n = -n;
 		count++;
 	}
