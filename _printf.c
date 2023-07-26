@@ -27,7 +27,7 @@ int _printf(const char *format, ...)
 
 	while(format[i] != '\0')
 	{
-		j = 13;
+		j = 4;
 		
 		while (j >= 0)
 		{

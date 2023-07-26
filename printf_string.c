@@ -11,7 +11,7 @@
 int printf_string(va_list v)
 {
 	char *str = va_arg(v, char *);
-	int ln = str ? strlen(str) : 6;
+	int ln = str ? strlen(str) : 8;
 
 	int i;
 
