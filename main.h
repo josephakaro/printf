@@ -6,11 +6,12 @@
 #include <stdarg.h>
 #include <limits.h>
 #include <unistd.h>
+#include <string.h>
 
-typedef  struct
+typedef  struct format
 {
-	int place;
-	int (*f)(va_list args);
+	char *place;
+	int (*f)(va_list ap);
 }FormatSpecifier;
 
 extern int print_int(va_list v);
