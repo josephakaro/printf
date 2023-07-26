@@ -11,11 +11,9 @@
 typedef  struct format
 {
 	char *place;
-<<<<<<< HEAD
 	int (*f)(va_list ap);
 =======
 	int (*f)();
->>>>>>> 39b024208e2075dad220cca8fb187b99ecf4fe8c
 }FormatSpecifier;
 
 int Printf_hexdec(va_list v)
