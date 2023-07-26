@@ -14,13 +14,18 @@ typedef  struct format
 	int (*f)();
 }FormatSpecifier;
 
-extern int print_int(va_list v);
-extern int printf_char(va_list v);
-extern int printf_int(va_list ap);
-extern int printf_string(va_list ap);
-extern int printf_cent(void);
-extern int printf_unsigned(va_list ap);
-extern int _putchar(char c);
-extern int _printf(const char *format, ...);
+int Printf_hexdec(va_list v)
+int Printf_HEXDEC(va_list v)
+int Printf_binary(va_list v)
+int Printf_octdec(va_list v)
+int printf(va_list v);
+int printf_int(va_list v);
+int printf_char(va_list v);
+int printf_int(va_list ap);
+int printf_string(va_list ap);
+int printf_cent(void);
+int printf_unsigned(va_list ap);
+int _putchar(char c);
+int _printf(const char *format, ...);
 
 #endif
