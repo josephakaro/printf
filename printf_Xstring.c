@@ -5,13 +5,14 @@
  *
  * @v: Argument passed
  *
- * Return the length of argument
+ * Return: the length of argument
  */
 
 int printf_Xstring(va_list v)
 {
 	char *str = va_arg(v, char *);
 	int i, ln, c;
+
 	ln = 0;
 
 	if (str == NULL)
@@ -22,13 +23,13 @@ int printf_Xstring(va_list v)
 	for (i = 0; str[i] != '\0'; i++)
 	{
 		c = str[i];
-		if(c < 32 || c > 127)
+		if (c < 32 || c > 127)
 		{
 			_putchar('\\');
 			_putchar('x');
 			ln += 2;
 
-			if(c < 16)
+			if (c < 16)
 			{
 				_putchar('0');
 				ln++;

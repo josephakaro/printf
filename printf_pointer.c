@@ -21,6 +21,7 @@ int printf_pointer(va_list v)
 	else
 	{
 		long int a = (unsigned long int)p;
+
 		ln = printf_aux_h(a) + 2;
 	}
 
@@ -29,5 +30,5 @@ int printf_pointer(va_list v)
 		_putchar(str[i]);
 	}
 
-	return ln;
+	return (ln);
 }

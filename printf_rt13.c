@@ -5,7 +5,7 @@
  *
  * @ap: argument type
  *
- * Return the padded arguments
+ * Return: the padded arguments
  */
 
 int printf_rt13(va_list ap)
@@ -15,7 +15,7 @@ int printf_rt13(va_list ap)
 	char *a = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	char *b = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
 
-	if(str == NULL)
+	if (str == NULL)
 	{
 		str = "null";
 	}
@@ -24,8 +24,8 @@ int printf_rt13(va_list ap)
 	{
 		char c = str[i];
 		int id = strchr(a, c) - a + 1;
-		
-		if(id != -1)
+
+		if (id != -1)
 		{
 			_putchar(b[id]);
 			count++;

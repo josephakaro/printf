@@ -5,7 +5,7 @@
  *
  * @v: argument type
  *
- * Reurn: Prints hexadecimal
+ * Return: Prints hexadecimal
  */
 
 int printf_HEXDEC(va_list v)
@@ -16,10 +16,11 @@ int printf_HEXDEC(va_list v)
 	for (i = 31; i > 0; i--)
 	{
 		int bit = (num >> i) & 1;
-			
+
 		if (flags || bit)
 		{
 			flags = 1;
+
 			_putchar(bit + '0');
 			con++;
 		}

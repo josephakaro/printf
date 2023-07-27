@@ -20,7 +20,7 @@ int printf_reverse(va_list ap)
 
 	ln = strlen(str);
 
-	for ( i = ln + 1; i >= 0; i--)
+	for (i = ln + 1; i >= 0; i--)
 	{
 		_putchar(str[i]);
 	}

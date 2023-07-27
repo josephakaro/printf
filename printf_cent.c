@@ -7,6 +7,6 @@
  */
 int printf_cent(void)
 {
-    _putchar(37);
-    return (1);
+	_putchar(37);
+	return (1);
 }
