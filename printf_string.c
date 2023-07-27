@@ -1,26 +1,26 @@
 #include "main.h"
 
 /**
- * printf_string - Print string when called by _printf
+ * printf_string - Prints a string when called by _printf.
  *
- * @v: Argument type
+ * @v: Argument type (va_list).
  *
- * Return: String length
+ * Return: String length.
  */
-
 int printf_string(va_list v)
 {
-	char *str = va_arg(v, char *);
-	int ln = str ? strlen(str) : 8;
+    char *str = va_arg(v, char *);
+    int ln = str ? strlen(str) : 8;
 
-	int i;
+    int i;
 
-	i = 0;
+    i = 0;
 
-	while (i < ln)
-	{
-		_putchar(str[i]);
-		i++;
-	}
-	return (ln);
+    while (i < ln)
+    {
+        _putchar(str[i]);
+        i++;
+    }
+
+    return (ln);
 }
