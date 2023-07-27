@@ -27,13 +27,13 @@ int printf_int(va_list ap)
         n = n / 10;
     } while (n > 0);
 
-    if (count == 0) // Special case for n = 0
+    if (count == 0) /* Special case for n = 0 */
     {
         _putchar('0');
         count++;
     }
 
-    if (n < 0) // Print the negative sign
+    if (n < 0) /* Print the negative sign */
     {
         _putchar('-');
         count++;
