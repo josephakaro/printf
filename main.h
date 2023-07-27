@@ -11,17 +11,18 @@
 typedef  struct format
 {
 	char *place;
-	int (*f)(va_list ap);
-=======
 	int (*f)();
 }FormatSpecifier;
 
-int Printf_hexdec(va_list v)
-int Printf_HEXDEC(va_list v)
-int Printf_binary(va_list v)
-int Printf_octdec(va_list v)
-int printf(va_list v);
-int printf_int(va_list v);
+int printf_pointer(va_list v);
+int printf_Xstring(va_list v);
+int printf_reverse(va_list ap);
+int printf_rt13(va_list va);
+int printf_hexdec(va_list v);
+int printf_aux_h(unsigned long int num);
+int printf_HEXDEC(va_list v);
+int printf_binary(va_list v);
+int printf_octdec(va_list v);
 int printf_char(va_list v);
 int printf_int(va_list ap);
 int printf_string(va_list ap);
