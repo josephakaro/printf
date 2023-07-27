@@ -2,12 +2,10 @@
 
 FormatSpecifier arr[] =
 {
-<<<<<<< HEAD
-    {"%s", printf_string},
-    {"%c", printf_char},
-    {"%%", printf_cent},
-    {"%d", printf_int}
-=======
+	{"%s", printf_string},
+        {"%c", printf_char},
+        {"%%", printf_cent},
+        {"%d", printf_int},
 	{"%s", printf_string},
 	{"%c", printf_char},
 	{"%%", printf_cent},
@@ -21,7 +19,6 @@ FormatSpecifier arr[] =
 	{"%X", printf_HEXDEC},
 	{"%S", printf_Xstring},
 	{"%p", printf_pointer}
->>>>>>> 1e1ba78e95e734d5c9421aa04a614f1bd428f1da
 };
 
 /**
