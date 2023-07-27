@@ -20,10 +20,10 @@ int printf_rt13(va_list ap)
 		str = "null";
 	}
 
-	for (i = 0; str[1]; i++)
+	for (i = 0; str[i]; i++)
 	{
 		char c = str[i];
-		int id = strchr(a, c) - a;
+		int id = strchr(a, c) - a + 1;
 		
 		if(id != -1)
 		{
