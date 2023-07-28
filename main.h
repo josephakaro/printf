@@ -39,5 +39,6 @@ int printf_cent(void);
 int printf_unsigned(va_list ap);
 int _putchar(char c);
 int _printf(const char *format, ...);
-
+int _str(const char *str);
+int _length(char *str);
 #endif
