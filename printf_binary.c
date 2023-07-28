@@ -16,6 +16,7 @@ int printf_binary(va_list v)
 	for (i = 31; i >= 0; i--)
 	{
 		int bit = (num >> i) & 1;
+
 		if (bit || flags)
 		{
 			flags = 1;

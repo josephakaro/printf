@@ -9,16 +9,16 @@
  */
 int printf_string(va_list v)
 {
-    char *str = va_arg(v, char *);
-    int ln = str ? strlen(str) : 6;
+	char *str = va_arg(v, char *);
+	int ln = str ? strlen(str) : 6;
 
-    int i = 0;
+	int i = 0;
 
-    while (i < ln)
-    {
-        _putchar(str[i]);
-        i++;
-    }
+	while (i < ln)
+	{
+	_putchar(str[i]);
+	i++;
+	}
 
-    return (ln);
+	return (ln);
 }

@@ -19,7 +19,7 @@ int printf_octdec(va_list v)
 		count++;
 	}
 
-	for(i = count - 1; i >= 0; i--)
+	for (i = count - 1; i >= 0; i--)
 	{
 		_putchar((num >> (i * 3)) & (7 + '0'));
 	}

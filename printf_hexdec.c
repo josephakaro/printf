@@ -3,7 +3,7 @@
 /**
  * printf_hexdec - prints hexadecimal when called by printf
  *
- * @num: Argument to call
+ * @v: Argument to call
  *
  * Return: the passed argument
  */
