@@ -8,11 +8,20 @@
 #include <unistd.h>
 #include <string.h>
 
+/**
+ * struct format - Holds list og an array of functions
+ *
+ * @place: Holds IDs.
+ * @f: Holds functions.
+ *
+ * Return: Format specifier.
+ */
+
 typedef  struct format
 {
 	char *place;
 	int (*f)();
-}FormatSpecifier;
+} FormatSpecifier;
 
 int printf_pointer(va_list v);
 int printf_Xstring(va_list v);
