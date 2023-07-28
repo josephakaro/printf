@@ -5,9 +5,6 @@ FormatSpecifier arr[] = {
 	{"%c", printf_char},
 	{"%%", printf_cent},
 	{"%d", printf_int},
-	{"%s", printf_string},
-	{"%c", printf_char},
-	{"%%", printf_cent},
 	{"%i", printf_int},
 	{"%r", printf_reverse},
 	{"%R", printf_rt13},
@@ -38,7 +35,7 @@ int _printf(const char *format, ...)
 		return (-1);
 	while (format[i] != '\0')
 	{
-		j = 4;
+		j = 14;
 
 		while (j >= 0)
 		{
