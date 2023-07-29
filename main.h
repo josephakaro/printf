@@ -1,44 +1,51 @@
 #ifndef MAIN_H
 #define MAIN_H
 
+/*** Header Files to include in all functions ***/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdarg.h>
 #include <limits.h>
 #include <unistd.h>
-#include <string.h>
+
+/*** Used local Buffer of 1024 to call Write ***/
+
+#define BUFFER 1024
 
 /**
- * struct format - Holds list og an array of functions
+ * struct format - Locates the functions.
  *
- * @place: Holds IDs.
- * @f: Holds functions.
+ * @type: Holds the specifiers (s, c, d, i, u, o, x, X, %)
+ * @function: Holds all specified functions.
  *
- * Return: Format specifier.
+ * Return: Called Format Specifiers.
  */
 
-typedef  struct format
+typedef struct format
 {
-	char *place;
-	int (*f)();
-} FormatSpecifier;
+	char *type;
+	int(*f)();
+} Specifier;
 
-int printf_pointer(va_list v);
-int printf_Xstring(va_list v);
-int printf_reverse(va_list ap);
-int printf_rt13(va_list va);
-int printf_hexdec(va_list v);
-int printf_aux_h(unsigned long int num);
-int printf_HEXDEC(va_list v);
-int printf_binary(va_list v);
-int printf_octdec(va_list v);
-int printf_char(va_list v);
-int printf_int(va_list ap);
-int printf_string(va_list ap);
-int printf_cent(void);
-int printf_unsigned(va_list ap);
-int _putchar(char c);
+/*** Printf and Putchar prototypes ***/
+
 int _printf(const char *format, ...);
-int _str(const char *str);
-int _length(char *str);
+int _putchar(char c);
+
+/*** Prototypes Functions ***/
+
+/** 0-Task **/
+
+int printf_str(va_list args);
+int printf_char(va_list args);
+int printf_percent(void);
+int strl(char *str);
+int strc(const char *str);
+
+/** 1-Task **/
+
+int printf_dec(va_list ap);
+int printf_int(va_list ap);
+
 #endif
