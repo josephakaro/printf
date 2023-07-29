@@ -1,10 +1,23 @@
 #include "main.h"
-Specifier arr[] = {
-	{"%s", printf_str},
+
+FormatSpecifier arr[] = {
+	{"%s", printf_string},
 	{"%c", printf_char},
-	{"%%", printf_percent},
-	{"%d", printf_dec},
+	{"%%", printf_cent},
+	{"%d", printf_int},
+	{"%s", printf_string},
+	{"%c", printf_char},
+	{"%%", printf_cent},
 	{"%i", printf_int},
+	{"%r", printf_reverse},
+	{"%R", printf_rt13},
+	{"%b", printf_binary},
+	{"%u", printf_unsigned},
+	{"%o", printf_octdec},
+	{"%x", printf_hexdec},
+	{"%X", printf_HEXDEC},
+	{"%S", printf_Xstring},
+	{"%p", printf_pointer}
 };
 
 /**
@@ -14,35 +27,37 @@ Specifier arr[] = {
  *
  * Return: The specifier to stdout.
  */
-
 int _printf(const char *format, ...)
 {
 	va_list ap;
-	int i = 0, k, ln = 0;
+	int i = 0, j, ln = 0;
 
 	va_start(ap, format);
 
 	if (format == NULL || (format[0] == '%' && format[1] == '\0'))
-		return (-1);
+	return (-1);
+
 	while (format[i] != '\0')
 	{
-		k = 4;
-		while (k >= 0)
-		{
-			if (format[i] == arr[k].type[0] && format[i + 1] == arr[k].type[1])
-			{
-				ln += arr[k].f(ap);
-				i = i + 2;
-				break;
-			}
-			k--;
-		}
-		if (k < 0)
-		{
-			_putchar(format[i]);
-			ln++;
-			i++;
-		}
+	j = 4;
+
+	while (j >= 0)
+	{
+	if (format[i] == arr[j].place[0] && format[i + 1] == arr[j].place[1])
+	{
+	ln += arr[j].f(ap);
+	i = i + 2;
+	break;
+	}
+	j--;
+	}
+
+	if (j < 0)
+	{
+	_putchar(format[i]);
+	ln++;
+	i++;
+	}
 	}
 	va_end(ap);
 	return (ln);
