@@ -15,7 +15,6 @@ FormatSpecifier arr[] = {
 	{"%u", printf_unsigned},
 	{"%o", printf_octdec},
 	{"%x", printf_hexdec},
-	{"%X", printf_HEXDEC},
 	{"%S", printf_Xstring},
 	{"%p", printf_pointer}
 };
@@ -39,7 +38,7 @@ int _printf(const char *format, ...)
 
 	while (format[i] != '\0')
 	{
-	j = 4;
+	j = 13;
 
 	while (j >= 0)
 	{

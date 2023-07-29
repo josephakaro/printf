@@ -20,7 +20,6 @@ int printf_reverse(va_list ap);
 int printf_rt13(va_list va);
 int printf_hexdec(va_list v);
 int printf_aux_h(unsigned long int num);
-int printf_HEXDEC(va_list v);
 int printf_binary(va_list v);
 int printf_octdec(va_list v);
 int printf_char(va_list v);
