@@ -28,8 +28,8 @@ int printf_char(va_list val);
 
 /*** TASK 1  */
 
-int printf_int(va_list val);
-int printf_int(va_list val);
+int printf_deceimal(va_list args);
+int printf_int(va_list args);
 
 /*** TASK 2  */
 
