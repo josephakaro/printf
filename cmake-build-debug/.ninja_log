@@ -1,0 +1,25 @@
+# ninja log v5
+51	635	7283110741266279	CMakeFiles/printf.dir/10-task.c.obj	5277330370465fc2
+2	786	7283110741286114	CMakeFiles/printf.dir/test/main.c.obj	257c85d1a936bcf2
+22	801	7283110742474969	CMakeFiles/printf.dir/1-task.c.obj	54434d62c1ca1a3f
+648	1030	7283110744255506	CMakeFiles/printf.dir/11-task.c.obj	b11f8d57a3d39a61
+787	1485	7283110747224980	CMakeFiles/printf.dir/0-task.c.obj	20755cabad359c77
+802	1545	7283110747234964	CMakeFiles/printf.dir/14-task.c.obj	9bb57cdd1166d2e2
+1030	1829	7283110749314955	CMakeFiles/printf.dir/12-task.c.obj	aace417afd485b28
+1486	1880	7283110753574768	CMakeFiles/printf.dir/13-task.c.obj	56cf8cfef83fb17d
+1547	2135	7283110753203832	CMakeFiles/printf.dir/4-task.c.obj	6e9e8215c3f8ac2
+1881	2178	7283110756435705	CMakeFiles/printf.dir/2-task.c.obj	43939b255d0f4e17
+2144	2428	7283110759427215	CMakeFiles/printf.dir/7-task.c.obj	f1a47ddcd598ef53
+2179	2455	7283110759634780	CMakeFiles/printf.dir/6-task.c.obj	567bd972ff0af3ed
+2455	2661	7283110761665065	CMakeFiles/printf.dir/9-task.c.obj	7a4093e7340bf7f4
+2429	2692	7283110761694794	CMakeFiles/printf.dir/5-task.c.obj	dbeba21f3e49f57b
+2662	2901	7283110764034775	CMakeFiles/printf.dir/_prinf.c.obj	f713d5d0a0f085d9
+2693	2924	7283110764325535	CMakeFiles/printf.dir/8-task.c.obj	7dbe86e65e9f3c92
+1830	3057	7283110765354774	CMakeFiles/printf.dir/3-task.c.obj	dc31073cb67c8aaf
+2902	3119	7283110766256032	CMakeFiles/printf.dir/_putchar.c.obj	f53234772e8a5260
+2	900	7283115348909563	CMakeFiles/printf.dir/0-task.c.obj	20755cabad359c77
+902	1449	7283115354308205	printf.exe	f9b0fc4bdaf69fbf
+10	1050	7283117248245233	CMakeFiles/printf.dir/0-task.c.obj	20755cabad359c77
+1053	1956	7283117256755187	printf.exe	f9b0fc4bdaf69fbf
+3	474	7283118484283936	CMakeFiles/printf.dir/0-task.c.obj	20755cabad359c77
+476	998	7283118489153241	printf.exe	f9b0fc4bdaf69fbf
